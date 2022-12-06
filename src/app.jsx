@@ -27,7 +27,7 @@ export function App() {
       if (points.length >= 11000) {
         clearInterval(id);
       }
-      const randomBasePoint = basePoints[random(0, 2)];
+      const randomBasePoint = basePoints[random(0, basePoints.length-1)];
       if (!prevPoint?.current) {
         prevPoint.current = {
           x: random(0, window.innerWidth),

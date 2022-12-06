@@ -11,8 +11,8 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-        - run: yarn install --frozen-lockfile
-        - run: yarn build
+      - run: yarn install --frozen-lockfile
+      - run: yarn build
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
